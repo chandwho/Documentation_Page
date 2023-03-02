@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 1.5;
+  height: 100vh;
+}
+
+#main-doc {
+  display: flex;
+}
+
+/* Make navbar come on top when screen size is <1000px */
+@media (max-width:1000px){
+  #main-doc{
+    flex-direction: column;
+ }
+}
+
+#navbar {
+  min-width: 25%;
+  border-right: 5px solid grey;
+  text-align: center;
+  height: 100vh;
+  overflow: scroll;
+}
+
+#navbar > header {
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
+.navlink-container {
+  border-top: 1px solid grey;
+  height: 50px;
+  text-align: left;
+  padding: 12.5px 30px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(57, 57, 57);
+}
+
+header {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+#section-container {
+  min-width: 75%;
+  padding: 40px 50px;
+  height: 100vh;
+  overflow: scroll;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section > header {
+  margin-bottom: 20px;
+}
+
+
+p {
+  margin-left: 30px;
+  margin-bottom: 10px;
+  color: rgb(57, 57, 57);
+}
+
+.code-div {
+  margin-left: 30px;
+  margin-bottom: 10px;
+  padding: 15px;
+  background-color: rgb(232, 232, 232);
+  border-radius: 10px;
+}
+
+ul {
+  padding-left: 100px;
+  color: rgb(57, 57, 57);
+}
